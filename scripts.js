@@ -18,19 +18,15 @@ function esconderForm() {
 }
 
 
-
-
-
 document.querySelector(".form-fale-conosco").addEventListener('submit', function(e) {
     e.preventDefault();
 
     // Pega os valores do formulário
     const nome = document.getElementById('nome').value;
-    const telefone = document.getElementById('telefone').value;
     const duvida = document.getElementById('duvida').value;
 
     // Monta a mensagem
-    const texto = `Olá, meu nome é ${nome}. Telefone: ${telefone}. Dúvida: ${duvida}`;
+    const texto = `Olá, meu nome é ${nome}. Dúvida: ${duvida}`;
 
     // Número do WhatsApp com DDI e DDD, sem traços ou parênteses
     const numero = "5541987782576"; // exemplo com DDI do Brasil
