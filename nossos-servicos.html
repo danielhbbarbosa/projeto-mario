@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/servicos.css">
+    <title>Nossos Serviços</title>
+    <style>
+        body {
+            overflow: visible;
+        }
+
+        .mascara {
+            background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.9) 50%, rgba(10, 12, 16, 0.99) 85%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./assets/logo-header.png" alt="foto mario">
+        <a href="./index.html">Home</a>
+        <a href="./nossos-servicos.html">Nossos Serviços</a>
+        <a onclick="mostrarForm()">Fale Conosco</a>
+    </header>
+    <main>
+        <h1>Nossos Serviços</h1>
+
+        <section class="services-grid">
+            <a href="https://wa.me/5541987782576?text=Instalação%20de%20encanamentos">
+                <div>
+                    <h3>Instalação de encanamentos</h3>
+                </div>
+            </a>
+            <a href="https://wa.me/5541987782576?text=Manutenção%20e%20reparo%20de%20encanamentos">
+                <div>
+                    <h3>Manutenção e reparo de encanamentos</h3>
+                </div>
+            </a>
+            <a href="https://wa.me/5541987782576?text=Desentupimentos">
+                <div>
+                    <h3>Desentupimentos</h3>
+                </div>
+            </a>
+            <a href="https://wa.me/5541987782576?text=Instalação%20de%20aparelhos%20hidráulicos">
+                <div>
+                    <h3>Instalação de aparelhos hidráulicos</h3>
+                </div>
+            </a>
+            <a href="https://wa.me/5541987782576?text=Montagem%20e%20manutenção%20de caixas%20d’água">
+                <div>
+                    <h3>Montagem e manutenção de caixas d’água</h3>
+                </div>
+            </a>
+            <a href="https://wa.me/5541987782576?text=Instalação%20de%20sistemas%20de%20pressurização">
+                <div>
+                    <h3>Instalação de sistemas de pressurização</h3>
+                </div>
+            </a>
+            <a href="https://wa.me/5541987782576?text=Testes%20de%20estanqueidade">
+                <div>
+                    <h3>Testes de estanqueidade</h3>
+                </div>
+            </a>
+            <a href="https://wa.me/5541987782576?text=Instalação%20de%20sistemas%20de%20captação%20de%20água%20da%20chuva">
+                <div>
+                    <h3>Instalação de sistemas de captação de água da chuva</h3>
+                </div>
+            </a>
+            <a href="https://wa.me/5541987782576?text=Serviços%20em%20obras%20e%20reformas">
+                <div>
+                    <h3>Serviços em obras e reformas</h3>
+                </div>
+            </a>
+            <a href="https://wa.me/5541987782576?text=Orientação%20e%20consultoria%20técnica">
+                <div>
+                    <h3>Orientação e consultoria técnica</h3>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <section class="video-box">
+        <video src="./assets/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </section>
+
+    <div class="mascara-formulario" onclick="esconderForm()"></div>
+    
+    <form class="form-fale-conosco">
+        <input placeholder="Seu Nome" type="text" id="nome">
+        <input placeholder="Telefone" type="tel" id="telefone">
+        <textarea placeholder="Digite seu problema" id="duvida"></textarea>
+        <button type="submit">Pedir Orçamento</button>
+    </form>
+
+
+    <a href="https://wa.me/5541987782576?text=Preciso%20de%20um%20orçamento!" class="link-whatsapp">
+        <img src="./assets/whatsapp.png" alt="link para o whatsapp">
+    </a>
+
+
+</body>
+<script src="./scripts.js"></script>
+</html>
