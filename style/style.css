@@ -22,13 +22,44 @@ header img {
     height: 70px;
 }
 
-header a {
+header div.menu-btn {
+    width: 60px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+header div.menu-btn:hover {
+    background-color: #00000065;
+    transition: .5s;
+}
+.menu-btn div.line {
+    height: 7px;
+    width: 100%;
+    background: #fed405;
+    transition: 0.3s ease;
+    border-radius: 3px;
+    position: relative;
+}
+
+div.menu-links {
+    display: flex;
+    gap: 30px;
+}
+
+div.menu-links a.links {
     color: white;
     font-size: 18px;
     text-decoration: none;
 }
 
-header a:hover {
+div.menu-links a.links:hover {
     color: #c51111;
     transition: .5s ease-in-out;
 }
@@ -208,8 +239,6 @@ main {
 
 
 
-
-
 @media(max-width: 1010px) {
     body {
         overflow: visible;
@@ -243,17 +272,49 @@ main {
 
     
     header {
-        margin: 10px;
+        margin: 1.4vh 2.3vw;
         justify-content: center;        
     }
 
-    header img {
-        display: none;
+    header div.menu-btn {
+        display: flex;
+    }
+
+    div.menu-btn.active .first {
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+
+    div.menu-btn.active .second {
+        opacity: 0;
+    }
+
+    div.menu-btn.active .third {
+        transform: rotate(-45deg) translate(10px, -10px);
+    }
+
+
+    div.menu-links {
+        height: 100vh;
+        width: 50vw;
+        background-color: rgba(9, 9, 9, 0.895);
+        position: fixed;
+        top: 0px;
+        right: -100%;
+        flex-direction: column;    
+        justify-content: center;
+        align-items: center;
+        gap: 7vh;
+        transition: right .5s ease-in-out;
 
     }
 
-    header a {
-        font-size: 17px;
+    div.menu-links.active {
+        right: 0;
+
+    }
+
+    a.links {
+        font-size: 1.3em;
     }
 
     .mother-box {
@@ -265,6 +326,7 @@ main {
     }
 
     img.logo-mario {
+        margin-top: 20px;
         width: 50vw;
         height: auto;
     }
@@ -289,7 +351,7 @@ main {
     }
 }
 
-@media(min-height: 1200px){
+@media(min-height: 1100px){
     body {
         overflow: hidden;
     }
